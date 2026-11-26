@@ -1,19 +1,15 @@
-using System;
+using System; // Подключаем класс Console.
 
-internal class Program
-{
-    static void Main()
-    {
-        // Выполняем сложение и умножение.
-        int sum = 2 + 2;
-        int product = 3 * 3;
+internal class Program // Объявляем класс программы.
+{ // Начало класса.
+    static void Main() // Точка входа в программу.
+    { // Начало метода Main.
+        int sum = 2 + 2; // Складываем два числа.
+        int product = 3 * 3; // Умножаем два числа.
+        int result = ((18 + 6) * (15 - 7) - 36) / 6 + 4 * 5; // Вычисляем выражение с учётом порядка действий.
 
-        // Скобки задают порядок действий в сложном примере.
-        int result = ((18 + 6) * (15 - 7) - 36) / 6 + 4 * 5;
-
-        // Выводим каждый пример вместе с ответом.
-        Console.WriteLine($"2 + 2 = {sum}");
-        Console.WriteLine($"3 * 3 = {product}");
-        Console.WriteLine($"((18 + 6) * (15 - 7) - 36) / 6 + 4 * 5 = {result}");
-    }
-}
+        Console.WriteLine($"2 + 2 = {sum}"); // Показываем сумму.
+        Console.WriteLine($"3 * 3 = {product}"); // Показываем произведение.
+        Console.WriteLine($"((18 + 6) * (15 - 7) - 36) / 6 + 4 * 5 = {result}"); // Показываем результат сложного примера.
+    } // Конец метода Main.
+} // Конец класса.
